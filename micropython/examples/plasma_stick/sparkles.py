@@ -13,8 +13,8 @@ NUM_LEDS = 50
 SPARKLE_INTENSITY = 0.005
 
 # Change your colours here! RGB colour picker: https://g.co/kgs/k2Egjk
-BACKGROUND_COLOUR = [50, 50, 0]
-SPARKLE_COLOUR = [255, 255, 0]
+BACKGROUND_COLOUR = [50, 0, 0]
+SPARKLE_COLOUR = [200, 0, 0]
 
 # how quickly current colour changes to target colour [1 - 255]
 FADE_UP_SPEED = 2
