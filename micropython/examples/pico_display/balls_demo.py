@@ -2,9 +2,9 @@
 
 import time
 import random
-from picographics import PicoGraphics, DISPLAY_PICO_DISPLAY, PEN_P8
+from picographics import PicoGraphics, DISPLAY_PICO_DISPLAY_2, PEN_P8
 
-display = PicoGraphics(display=DISPLAY_PICO_DISPLAY, pen_type=PEN_P8)
+display = PicoGraphics(display=DISPLAY_PICO_DISPLAY_2, pen_type=PEN_P8)
 display.set_backlight(1.0)
 
 WIDTH, HEIGHT = display.get_bounds()

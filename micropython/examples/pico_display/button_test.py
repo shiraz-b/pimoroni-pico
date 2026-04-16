@@ -3,11 +3,11 @@
 
 import time
 from machine import Pin
-from picographics import PicoGraphics, DISPLAY_PICO_DISPLAY, PEN_P4
+from picographics import PicoGraphics, DISPLAY_PICO_DISPLAY_2, PEN_P4
 from pimoroni import RGBLED
 
 # We're only using a few colours so we can use a 4 bit/16 colour palette and save RAM!
-display = PicoGraphics(display=DISPLAY_PICO_DISPLAY, pen_type=PEN_P4, rotate=0)
+display = PicoGraphics(display=DISPLAY_PICO_DISPLAY_2, pen_type=PEN_P4, rotate=0)
 
 display.set_backlight(0.5)
 display.set_font("bitmap8")
@@ -79,6 +79,8 @@ while True:
     else:
         display.set_pen(GREEN)
         led.set_rgb(0, 255, 0)
-        display.text("Press any button!", 10, 10, 240, 4)
+        display.text("Thank you Maggie and Ken!!", 10, 10, 320, 4)
+        display.set_pen(MAGENTA)
+        display.text("Love, Shiraz.", 10, 200, 240, 4)
         display.update()
     time.sleep(0.1)  # this number is how frequently the Pico checks for button presses
